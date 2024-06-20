@@ -24,27 +24,20 @@
    /* Dark Mode Gmail Hack */
    u + .body .gmail-blend-screen { background:#000; mix-blend-mode:screen; }
 	 u + .body .gmail-blend-difference { background:#000; mix-blend-mode:difference; }
+   
+   @media (prefers-color-scheme: dark) {
+    .dark-mode-invert {
+      filter: invert(1);
+    }
+   }
+
   </style>
 </head>
 <body class="body">
   <div style="background:#000; background-image:linear-gradient(#000,#000);">
     <div class="gmail-blend-screen">
       <div class="gmail-blend-difference">
-        <p style="margin:0; padding:1em; color:#fff; font:bold 2em/1.5 sans-serif; text-align:center;">1</p>
-      </div>
-    </div>
-  </div>
-  <div style="background:#fff; background-image:linear-gradient(#fff,#fff);">
-    <div class="gmail-blend-screen">
-      <div class="gmail-blend-difference">
-        <p style="margin:0; padding:1em; color:#000; font:bold 2em/1.5 sans-serif; text-align:center;">6</p>
-      </div>
-    </div>
-  </div>
-  <div style="background:#000; background-image:linear-gradient(#000,#000);">
-    <div class="gmail-blend-screen">
-      <div class="gmail-blend-difference">
-        <p style="margin:0; padding:1em; color:#00C6AE; font:bold 2em/1.5 sans-serif; text-align:center;">7</p>
+        <p class="dark-mode-invert" style="margin:0; padding:1em; color:#00C6AE; font:bold 2em/1.5 sans-serif; text-align:center;">7</p>
       </div>
     </div>
   </div>
@@ -60,8 +53,8 @@
       <!-- Right Col -->
       <td style="vertical-align:top; padding-top: 16px; padding-left: 6px;">
         <!-- Name & Position -->
-        <p class="darkmode-bg" style="font-size:12px; color:#64748B; line-height: 18px; mso-line-height-rule: exactly;">
-          <strong class="darkmode-color" style="color:#00C6AE; font-size:15px;">
+        <p style="font-size:12px; color:#64748B; line-height: 18px; mso-line-height-rule: exactly;">
+          <strong class="dark-mode-invert" style="color:#00C6AE; font-size:15px;">
             Catalina Bustamante  
           </strong>
           <br>
